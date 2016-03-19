@@ -1,5 +1,11 @@
 "use strict";
 
+/*
+* Copy Right
+* Freely we received and freely do we give
+* Owner Emeka L.
+*/
+
 /**
 * This is a simple calculator with basic trigonometry function
 * Addition, Division, Multiplication, Substraction.
