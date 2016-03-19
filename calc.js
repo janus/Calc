@@ -36,7 +36,7 @@ var CALC;
                 this.tval = val;    
             }
             
-             /**
+            /**
             * 
             * Private
             * @param {object} -- token object
@@ -255,7 +255,7 @@ var CALC;
                 return res;
             };
             /**
-            * Recursive Descent parser (instant calculation)
+            * Recursive descent parser (instant calculation)
             * @return {number} -- returns numerical value 
             */
             Parser.prototype.calc = function () {
