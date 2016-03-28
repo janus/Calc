@@ -1,5 +1,11 @@
 "use strict";
 
+/*
+* Copy Right
+* Freely we received and freely do we give
+* Owner Emeka L.
+*/
+
 /**
 * This is a simple calculator with basic trigonometry function
 * Addition, Division, Multiplication, Substraction.
@@ -36,7 +42,7 @@ var CALC;
                 this.tval = val;    
             }
             
-             /**
+            /**
             * 
             * Private
             * @param {object} -- token object
@@ -255,7 +261,7 @@ var CALC;
                 return res;
             };
             /**
-            * Recursive Descent parser (instant calculation)
+            * Recursive descent parser (instant calculation)
             * @return {number} -- returns numerical value 
             */
             Parser.prototype.calc = function () {
