@@ -1,4 +1,4 @@
-//"use strict";
+"use strict";
 /**
 * Simple Calculator
 * Based of Shunting Yard Algorithm
@@ -76,10 +76,8 @@ function shuntyard(tokens) {
             else if (isLowerPrecedence(token, opStack[opStack.length - 1])) {
                 output.push(opStack.pop());
                 while(opStack[0] !== undefined && isLowerPrecedence(token, opStack[opStack.length - 1])){
-
                     output.push(opStack.pop());
                 }
-  
             }
             opStack.push(token);
             
@@ -119,7 +117,6 @@ function shuntyard(tokens) {
             isFunction(tt)? output.push(tt) : opStack.push(tt);
             
         }
-
         
       
     }
@@ -144,7 +141,8 @@ function shuntyard(tokens) {
 function tokenizer(str) {
     return str.split(/(\s|,|[a-z]+|\/|\(|\))/);
 }    
-    
+  
+//unit test    
 var stret =  "2 - 3 - 8 * 2 + 20";///"pow(90 + 23 - 4 , 45) + 4 ^ 2 + sin(34)"; //"2 - 3 -  4 * 2 + 45 
 
 var dot = tokenizer(stret);
