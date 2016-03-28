@@ -96,8 +96,6 @@ function shuntyard(tokens) {
                 j++;
             }
             opStack.push(top);
-            console.log(output);
-            console.log(opStack);
             //throw new Error("Expression lacked (");
             if(j + 1 === slen) {
                 throw new Error("Expression lacked (");
@@ -109,11 +107,9 @@ function shuntyard(tokens) {
             while(tt !== "(") {
                 output.push(tt);
                  tt = opStack.pop();
-                console.log(tt);
             }
             
             tt = opStack.pop();
-            console.log(tt);
             isFunction(tt)? output.push(tt) : opStack.push(tt);
             
         }
@@ -123,9 +119,7 @@ function shuntyard(tokens) {
     if (opStack.length > 0){
         var len = opStack.length, k;
         for (k = 0; k < len; k++) {
-            console.log(output);
             output.push(opStack.pop());
-            
         }
         
     }
